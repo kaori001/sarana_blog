@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* header */
+header {
+  width: 100%;
+  height: 111px;
+}
+header h1 {
+  height: 70px;
+  padding-top: 20px;
+  padding-left: 16px;
+}
+header img {
+  width: 145px;
+  height: 30px;
+}
+
+nav {
+  width: 100%;
+  height: 41px;
+  background-color: #333333;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-left: 31px;
+}
+nav li a {
+  color: #fff;
+  font-size: 1.4rem;
+  padding-right: 60px;
+}
+
+/* header SP版 */
+@media screen and (max-width: 767px) {
+  header h1 {
+    padding-left: 20px;
+  }
+  nav {
+    overflow-x: scroll;
+  }
+}
+/* footer */
+#footer {
+  background: #F7F7F7;
+}
+
+#footer .content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+#footer .content .item {
+  width: 33%;
+  padding-right: 30px;
+}
+#footer .content .item h3 {
+  margin: 30px auto;
+}
+#footer .content .item p {
+  margin-bottom: 30px;
+}
+
+/* About */
+.about-list li {
+  position: relative;
+  padding-left: 12px;
+  color: #333;
+  padding-bottom: 5px;
+}
+
+/* 擬似要素で三角矢印を表示 */
+.about-list li::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+
+/* Menu */
+.menu-list {
+  border-bottom: solid 1px #777777;
+}
+.menu-list li {
+  padding: 15px;
+  border-top: solid 1px #777777;
+}
+
+/* Twitter */
+/* copyrigth */
+#footer p {
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+/* footer SP版 */
+@media screen and (max-width: 767px) {
+  #footer .content {
+    flex-direction: column;
+    margin-bottom: 90px;
+  }
+  #footer .content .item {
+    width: 100%;
+    padding-right: 0;
+  }
+  #footer .content .item h3 {
+    text-align: start;
+    margin: 50px auto 30px;
+  }
+}
+
+/* style.scss */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #FFFFFF;
+  color: #000;
+  font-family: "Noto Sans JP", "Noto Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4rem;
+  text-align: start;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.readmore {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.readmore a {
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+.readmore a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 2s ease;
+}
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+/* pickup */
+#pickup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+  margin-bottom: 70px;
+}
+#pickup article {
+  width: 33%;
+  padding: 0 23px;
+}
+
+/* container */
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+#container main {
+  width: 65%;
+}
+#container main article {
+  margin-bottom: 80px;
+}
+#container main article h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+/* main */
+main ul {
+  display: flex;
+  margin-bottom: 10px;
+}
+main ul li {
+  font-size: 1.4rem;
+  margin-right: 20px;
+}
+main p {
+  font-size: 1.6rem;
+  padding: 10px 30px 30px;
+}
+
+/* aside */
+aside {
+  width: 30%;
+}
+
+.author {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.author h3 {
+  margin: 30px auto;
+}
+.author img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.ranking {
+  margin-bottom: 60px;
+}
+.ranking h3 {
+  margin-bottom: 30px;
+}
+.ranking ul li {
+  margin-bottom: 30px;
+}
+
+.archive {
+  margin-bottom: 140px;
+}
+.archive h3 {
+  padding-bottom: 30px;
+}
+.archive ul {
+  border-bottom: solid 1px #777777;
+}
+.archive ul li {
+  font-size: 1.4rem;
+  padding: 20px;
+  border-top: solid 1px #777777;
+}
+
+/* SP版 */
+@media screen and (max-width: 767px) {
+  /* pickup */
+  #pickup {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  #pickup article {
+    width: 100%;
+    padding: 30px 0 0;
+  }
+  /* container */
+  #container {
+    flex-direction: column;
+  }
+  /* main */
+  #container main {
+    width: 100%;
+  }
+  #container main article {
+    width: 100%;
+    padding: 30px 0 10px;
+  }
+  #container main article p {
+    font-size: 1.6rem;
+    padding: 10px 40px 30px;
+  }
+  /* aside */
+  aside {
+    width: 100%;
+  }
+  .archive {
+    margin-bottom: 120px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
