@@ -57,6 +57,7 @@ nav li a {
 }
 #footer .content .item h3 {
   margin: 30px auto;
+  text-align: start;
 }
 #footer .content .item p {
   margin-bottom: 30px;
@@ -93,7 +94,6 @@ nav li a {
   border-top: solid 1px #777777;
 }
 
-/* Twitter */
 /* copyrigth */
 #footer p {
   text-align: center;
@@ -112,7 +112,6 @@ nav li a {
     padding-right: 0;
   }
   #footer .content .item h3 {
-    text-align: start;
     margin: 50px auto 30px;
   }
 }
